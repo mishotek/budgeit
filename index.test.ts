@@ -57,7 +57,3 @@ describe('onSubmit', () => {
     expect(amountInputEl.value).toBe("");
   })
 });
-
-test('should fail', () => {
-  expect(1 + 1).toBe(5);
-});
