@@ -59,5 +59,5 @@ describe('onSubmit', () => {
 });
 
 test('should fail', () => {
-  expect(2 + 2).toBe(5);
+  expect(1 + 1).toBe(5);
 });
