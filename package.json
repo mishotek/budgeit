@@ -20,6 +20,9 @@
   "bugs": {
     "url": "https://github.com/mishotek/budgeit/issues"
   },
+  "lint-staged": {
+    "*": "npx prettier . --write"
+  },
   "homepage": "https://github.com/mishotek/budgeit#readme",
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.18",
