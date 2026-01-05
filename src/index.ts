@@ -9,11 +9,15 @@ export function onSubmit(
   const category = formData.get("category");
   const amount = formData.get("amount");
 
+  if (!category || !amount) {
+    throw new Error("Invalid category or amount");
+  }
+
   const tableRowEl = document.createElement("tr");
   tableRowEl.className = "border-t-solid border-t-1 border-t-neutral-600";
 
   const categoryTableCellEl = document.createElement("td");
-  categoryTableCellEl.innerText = String(category);
+  categoryTableCellEl.innerText = category;
   categoryTableCellEl.className =
     "border-r-solid border-r-1 border-r-neutral-600";
 
