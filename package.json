@@ -21,16 +21,12 @@
   "bugs": {
     "url": "https://github.com/mishotek/budgeit/issues"
   },
-  "lint-staged": {
-    "*": "npx prettier . --write"
-  },
   "homepage": "https://github.com/mishotek/budgeit#readme",
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.18",
     "@types/node": "^25.0.3",
     "husky": "^9.1.7",
     "jsdom": "^27.4.0",
-    "lint-staged": "^16.2.7",
     "prettier": "3.7.4",
     "vite": "^7.3.0",
     "vitest": "^4.0.16"
