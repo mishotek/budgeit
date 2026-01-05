@@ -10,8 +10,8 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "test"
-  test:
+  # This workflow contains a single job called "Validate"
+  Validate:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -22,6 +22,13 @@ jobs:
 
       - name: Install packages
         run: npm ci
+
+      - name: Check formatting
+        run: |
+          npm run check-format || (
+            echo "❌ Code is not formatted correctly. Please run the formatter (npm run format)." &&
+            exit 1
+          )
 
       - name: Test client
         run: npm test
